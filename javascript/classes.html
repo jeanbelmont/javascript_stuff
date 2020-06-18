@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        section,
+        article,
+        ul,
+        body,
+        html,
+        .contenedor {
+            padding: 20px;
+        }
+
+        body {
+            background-color: lightgrey;
+        }
+
+        html {
+            background-color: linen;
+        }
+
+        li {
+            background-color: lightpink;
+            margin: 10px;
+            padding: 5px
+        }
+
+        .section {
+            background-color: lightsteelblue;
+        }
+
+        .article {
+            background-color: lightgoldenrodyellow;
+        }
+
+        .ulist {
+            background-color: lightblue;
+        }
+
+        .contenedor {
+            background-color: lightcyan;
+        }
+
+        .span {
+            background-color: lightgreen;
+            padding: 5px 10px;
+        }
+
+        button {
+            border-radius: 4px;
+            padding: 4px 8px;
+        }
+
+        .circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: lightseagreen;
+            display: inline-block;
+            margin-bottom: -10px;
+        }
+
+        .square {
+            width: 30px;
+            height: 30px;
+            background-color: lightsalmon;
+            display: inline-block;
+            margin-bottom: -10px;
+        }
+
+        p {
+            display: inline-block;
+        }
+        img{
+            margin: 0 auto;
+            display: inline;
+            text-align: center;
+            cursor: pointer;
+        }
+        .character_img_container{
+            margin: 0 auto;
+            max-width: 350px;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 30px;
+            background-color: white;
+        }
+    </style>
+    <script src="helper_functions.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">DOM navigation</a>
+        <a href="crear_elementos.html">Crear Elementos</a>
+        <a href="bubbling_propagation_capture.html">Bubbling Propagation and Capturing</a>
+        <a href="classes.html">Javascript Classes</a>
+        <a href="classes3.html">Classes 3</a>
+    </nav>
+    <hr>
+    <h3>JAvascript Classes</h3>
+    
+    <!---->
+    <form action="">
+        <input name="nombre" type="text" placeholder="nombre" class="nombre" id="nombre">
+        <input name="curso" type="text" placeholder="curso" class="curso" id="curso">
+        <input name="autor" type="text" placeholder="autor" class="autor" id="autor">
+        <input name="clientes" type="text" placeholder="clientes" class="clientes" id="clientes">
+        <input type="submit" value="Submit" class="submitBtn" id="submitBtn">
+    </form>
+    <hr>
+    <h4>Vamos a crear un personaje</h4>
+    <section class="crear_personaje_box">
+        <form action="#">
+            <span>Escribe un Nombre</span>
+            <input class="form_name" type="text" name="nombre" value="Jean">
+            <div>
+                <p>Please select your gender</p>
+                <article class="character_img_container">
+                    <img src="img/male.png" alt="">
+                    <img src="img/female.png" alt="">
+                </article>
+                <input class="form_gender" type="hidden" name="gender">
+            </div>
+            <hr>
+                <p>Selecciona un Elemento</p><br>
+                <input type="radio" id="ice" name="element" value="ice">
+                <label for="ice">Ice</label><br>
+                <input type="radio" id="fire" name="element" value="fire">
+                <label for="fire">Fire</label><br>
+                <input type="radio" id="thunder" name="element" value="thunder">
+                <label for="thunder">Thunder</label><br><br>
+                <input class="bton_crear" type="submit" value="Crear">
+        </form>
+    </section>
+    <!----->
+    <script src="classes.js"></script>
+    <script src="classes2.js"></script>
+</body>
+
+</html>

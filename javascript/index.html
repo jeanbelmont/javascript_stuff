@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="helper_functions.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+        <nav>
+            <a href="index.html">DOM navigation</a>
+            <a href="crear_elementos.html">Crear Elementos</a>
+            <a href="bubbling_propagation_capture.html">Bubbling Propagation and Capturing</a>
+            <a href="classes.html">Javascript Classes</a>
+        </nav>
+        <hr>
+    <h3>Elementos separados</h3>
+    <div id="my_div">div</div>
+    <section id="my_section">section</section>
+    <article id="my_article">article</article>
+    <ul id="my_menu">
+        <li class="menu_item">Link 1</li>
+        <li class="menu_item">Link 2</li>
+        <li class="menu_item">Link 3</li>
+        <li class="menu_item">Link 4</li>
+        <li class="menu_item">Link 5</li>
+        <!--Este comentario también es un nodo--></ul>
+    
+    <!--Componentes Incrustados-->
+    <h3>Elementos Anidados</h3>
+    <div class="div_container">
+        <section class="section">
+            <article class="article">
+                <nav class="menu_wrapper">
+                    <ul class="menu">
+                        <li id="link1">
+                            <a href="#1">Link 1</a>
+                        </li>
+                        <li id="link2">
+                            <a href="#2">Link 2</a>
+                        </li>
+                        <li class="menu_item" id="link3">
+                            <a id="parent_of_nested_elem" href="#3">
+                                <i id="nested_elem">Link 3</i>
+                            </a>
+                        </li>
+                        <li id="link4">
+                            <a href="#4">Link 4</a>
+                        </li>
+                        <li id="link5">
+                            <a href="#5">Link 5</a>
+                        </li>
+                    </ul>
+                </nav>
+            </article>
+        </section>
+    </div>
+    <!---->    
+
+<script src="DOM_navigation.js"></script>
+<!-- <script src="local_storage.js"></script> -->
+<script src="index.js"></script>
+</body>
+</html>

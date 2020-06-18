@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .special_class{
+            padding: 20px;
+            background-color: powderblue;
+            border-radius: 10px;
+            box-shadow: 3px 3px 6px lightslategray;
+            max-width: 200px;
+            text-align: center;
+        }
+        .special_class:hover{
+            background-color: lightblue;
+            box-shadow: 3px 3px 6px #555;
+        }
+        #my_div{
+            background-color: linen;
+            padding: 20px;
+        }
+        #my_section{
+            background-color: lightyellow;
+            padding: 20px;
+        }
+        #my_article{
+            background-color:lightgray ;
+            padding: 20px;
+        }
+        .strongtext{
+            background-color: whitesmoke;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+    </style>
+    <script src="helper_functions.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">DOM navigation</a>
+        <a href="crear_elementos.html">Crear Elementos</a>
+        <a href="bubbling_propagation_capture.html">Bubbling Propagation and Capturing</a>
+        <a href="classes.html">Javascript Classes</a>
+    </nav>
+    <hr>
+    <h1>Crear Elementos</h1>
+    <!--Componentes Sueltos-->
+    <div id="my_div"><p class="text">div paragraph</p></div>
+    <section id="my_section">
+        <ul id="my_list">
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+            <li>item5</li>
+        </ul>
+    </section>
+    <article id="my_article">
+        <strong class="strongtext">styled text</strong>
+    </article>
+    <ol id="o_list">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li id="item4">item 4</li>
+        <li>item 5</li>
+    </ol>
+    <!---->        
+    <script src="crear_elementos.js"></script>
+</body>
+
+</html>
