@@ -3,8 +3,20 @@
 
 // Generar numeros aleatorios  inseguros
 let randomNumber = Math.ceil(Math.random() * 99999);
-
 console.log('Math.random', randomNumber);
+
+// Generar numeros aleatorios inseguros entre un valor minimo y uno máximo
+function getRndInteger(min, max) {
+    let randomN = Math.floor(Math.random() * (max - min)) + min;
+    console.log(`Random entre ${min} y ${max} `,randomN);
+    //return Math.floor(Math.random() * (max - min)) + min;
+}
+// numero random entre 1 y 9
+getRndInteger(1, 9)
+
+// numero random entre mil y nueve mil
+getRndInteger(1000, 9000)
+
 
 
 /// generar numeros aleatorios seguros

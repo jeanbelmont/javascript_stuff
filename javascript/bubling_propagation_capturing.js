@@ -1,10 +1,10 @@
 // esversion: 6
 
 /***************************
+ * EVENT PROPAGATION - Es el orden en que se disparan los eventos
  * EVENT BUBBLING - comienza en el target y entonces burbujea(bubbling) hacia afuera de documento
- * EVENT PROPAGATION - El orden en que se disparan los eventos
  * EVENT CAPTURING - Se dispara en la raíz del cdocmento y continua hasta que encuentra el target
- * En otras palabras es lo contrario de Blubbling, comienza en el window y viaja hacia adentro hata que encuentra el target
+ * En otras palabras es lo contrario de Blubbling, comienza en el window y viaja hacia adentro hasta que encuentra el target
  * STOP PROPAGATION evita que Bubbling o Capturing continuen recorriendo los elementos una vez que encuentra el target
  ****************************/
 

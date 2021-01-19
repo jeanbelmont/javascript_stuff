@@ -20,7 +20,7 @@ newElem.innerHTML = '<p>This is a new Element</p>';
 // una vez creado podemos manipularlo como cualquier elemento ya existente en el DOM
 // es decir, podemos agregar o quitar atributos como classes IDs href style cualquier cosa
 // incluso podemos agregar eventos
-newElem.classList.add('special_class');
+newElem.classList.add('special_class', 'apendChild');
 newElem.setAttribute('title', 'Element created using Javascript');
 newElem.setAttribute('style', 'color:#555;font-weight:bold;');
 
@@ -59,7 +59,7 @@ target_div.appendChild(newElem);
 // para colocar el elemento clonado dentro del mismo target
 let newElem2 =  document.createElement('div');
 newElem2.innerHTML = '<p>Prepended new Element</p>';
-newElem2.classList.add('special_class');
+newElem2.classList.add('special_class', 'prepend');
 newElem2.setAttribute('style', 'color:#555;font-weight:bold;');
 
 target_div.prepend(newElem2);
@@ -137,6 +137,7 @@ let newButton = document.createElement('button');
 newButton.innerText='Click Me!';
 newButton.classList.add('special_class');
 newButton.setAttribute('style', 'margin:10px');
+
 function replace_content(event) {
     event.target.innerText = 'Clicked !!';
 }
@@ -149,10 +150,11 @@ $s('#my_article').appendChild(newButton);
 let clonedBtn = newButton.cloneNode(true);
 // y lo agregamos al mismo target
 $s('#my_article').appendChild(clonedBtn);
+
+
 /////////// NOTA
 // cuando clonas un elemento pierde todos los attached events
 // y se deben agregar despues de colocar el elemento en el document
-
 let clone2 = newButton.cloneNode(true);
 $s('#my_article').appendChild(clone2).addEventListener('click', replace_content);
 
